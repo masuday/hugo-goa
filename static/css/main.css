@@ -266,3 +266,8 @@ pre > code {
     padding-left: 10px;
     padding-right: 10px;
 }
+h3.intro
+{
+    margin-top: 0px;
+    line-height: 1.4;
+}
