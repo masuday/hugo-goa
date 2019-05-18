@@ -101,6 +101,9 @@
   {{ with .Site.Params.social.whatsapp}}
   <a href="https://wa.me/{{.}}" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.researchgate }}
+  <a href="https://www.researchgate.net/{{.}}" aria-label="Researchgate" target="_blank"><i class="fab fa-researchgate" aria-hidden="true"></i></a>
+  {{ end }}
   {{ with .Site.Params.social.email }}
   <a href="mailto:{{.}}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
   {{ end }}
@@ -146,6 +149,7 @@
     {{ with .Site.Params.social.twitch}}"https://www.twitch.tv/{{.}}",{{ end }}
     {{ with .Site.Params.social.soundcloud}}"https://soundcloud.com/{{.}}",{{ end }}
     {{ with .Site.Params.social.tumblr}}"https://{{.}}.tumblr.com",{{ end }}
+    {{ with .Site.Params.social.researchgate }}"https://www.researchgate.net/{{.}}",{{ end }}
     {{ with .Site.Params.social.strava}}"https://www.strava.com/athletes/{{.}}",{{ end }},
     "{{ .Site.Params.baseURL }}"
   ]
