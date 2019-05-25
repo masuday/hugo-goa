@@ -90,6 +90,15 @@ div.content
     font-weight: 200;
     color: #8b8b8b;
 }
+div.description
+{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #8b8b8b;
+    font-size: 18px;
+    line-height: 1.1;
+}
 .error
 {
     font-family: 'Roboto', sans-serif;
@@ -138,11 +147,20 @@ div.content
     margin-top: 10px;
     margin-bottom: 20px;
 }
+/*
 .intro
 {
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
     color: #777;
+}
+*/
+div.intro
+{
+    margin-top: 0px
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
 }
 h3.intro
 {
@@ -190,6 +208,12 @@ h3.intro
     text-decoration: none;
 
     color: #966 !important;
+}
+#main-menu-pane div
+{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .meta
 {
@@ -259,15 +283,4 @@ pre > code {
     white-space: pre;
     word-wrap: initial;
     word-break: initial;
-}
-#main-menu-pane h4
-{
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-h3.intro
-{
-    margin-top: 0px;
-    line-height: 1.4;
 }
