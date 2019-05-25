@@ -107,9 +107,16 @@
   {{ with .Site.Params.social.email }}
   <a href="mailto:{{.}}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
   {{ end }}
+  {{/*
   {{ if and ( .Site.Params.extra.rss ) ( .RSSLink ) }}
   <a href="{{ .RSSLink }}" aria-label="RSS" target="_blank"><i class="fas fa-rss" aria-hidden="true"></i></a>
   {{ end }}
+  */}}
+  {{/*
+  {{- if .OutputFormats.Get "RSS" }}
+  <a href="{{ .OutputFormats.Get "RSS" }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{- end -}}
+  */}}
 </section>
 {{ if .Site.Params.extra.socialmarkup }}
 <script type="application/ld+json">

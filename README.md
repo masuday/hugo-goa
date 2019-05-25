@@ -238,3 +238,10 @@ The theme's design was inspired by many blogs and themes:
 ## License
 
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License. See the [LICENSE](https://raw.githubusercontent.com/shenoybr/hugo-goa/master/LICENSE) file for more details.
+
+## Forked by Yutaka Masuda
+
+### Additional page parameters
+
+- `katex`: true if you use mathematical equations with KaTeX.
+- `static`: true if you make the page be static (non-blog page).

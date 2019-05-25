@@ -2,10 +2,12 @@
   <h1 class="title">{{ .Title }}</h1>
 </header>
 <section id="category-pane" class="row meta">
+  {{ if not .Params.static }}
   {{ if ne .Params.showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-left meta">
-       {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format .Site.Params.dateformat | upper }} {{end}}
+      {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format .Site.Params.dateformat | upper }} {{end}}
+      {{ with .Site.Params.author }} BY {{ . }} {{ end }}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
       {{ if gt $total 0 }}
@@ -19,6 +21,7 @@
     </h6>
   </div>
   {{ end }}
+  {{ end }}
 </section>
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
@@ -26,6 +29,7 @@
   </div>
 </section>
 <section id="tag-pane" class="row meta">
+  {{ if not .Params.static }}
   {{ if ne .Params.showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-right meta">
@@ -41,5 +45,6 @@
       {{ end }}
     </h6>
   </div>
+  {{ end }}
   {{ end }}
 </section>
