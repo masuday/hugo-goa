@@ -104,6 +104,12 @@
   {{ with .Site.Params.social.researchgate }}
   <a href="https://www.researchgate.net/{{.}}" aria-label="Researchgate" target="_blank"><i class="fab fa-researchgate" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.googlescholar }}
+  <a href="https://scholar.google.com/citations?user={{.}}" aria-label="Google Scholar" target="_blank"><i class="fab fa-google" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.university }}
+  <a href="{{.}}" aria-label="University" target="_blank"><i class="fas fa-university" aria-hidden="true"></i></a>
+  {{ end }}
   {{ with .Site.Params.social.email }}
   <a href="mailto:{{.}}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
   {{ end }}
