@@ -32,7 +32,7 @@ body
     min-height: 100%;
     margin: 0;
 
-    background-color: #fcfcfc;
+    background-color: #fefefe;
 }
 html
 {
@@ -64,7 +64,8 @@ html
 {
     overflow: auto;
 
-    max-width: 680px;
+    /* max-width: 680px; */
+    max-width: 880px;
     padding: 0 15px;
 }
 .content
@@ -100,6 +101,7 @@ div.description
     color: #8b8b8b;
     font-size: 18px;
     line-height: 1.1;
+    text-align: justify;
 }
 .error
 {
@@ -148,6 +150,11 @@ div.description
 {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+#info-pane
+{
+    padding-left: 120px;
+    padding-right: 120px;
 }
 /*
 .intro
@@ -267,7 +274,10 @@ header.title
     margin-top: 50px;
     padding: 0 15px;
 }
+/*
 @media (max-width: 991px)
+*/
+@media (max-width: 1291px)
 {
     .header
     {
